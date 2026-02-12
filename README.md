@@ -88,6 +88,7 @@ CREATE TABLE complaints (
     remarks TEXT,
     submission_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
 
 > **Note:** Update the `DBConnection.java` file with your local MySQL username and password before building the project.
 
