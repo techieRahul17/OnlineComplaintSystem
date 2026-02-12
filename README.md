@@ -1,7 +1,7 @@
 # Online Complaint Registration and Tracking System
 
 **Course:** UCS2601 Internet Programming  
-**Designed and Developed by:** Rahul V S  
+**Author:** Rahul V S  
 **Repository:** [https://github.com/techieRahul17/OnlineComplaintSystem](https://github.com/techieRahul17/OnlineComplaintSystem)
 
 ---
