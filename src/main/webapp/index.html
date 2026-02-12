@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaint System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Online Complaint Registration</h1>
+        
+        <div id="messageBox"></div>
+
+        <form name="regForm" action="RegisterServlet" method="post" onsubmit="return validateForm()">
+            <label>Full Name:</label>
+            <input type="text" name="name" required>
+            
+            <label>Email Address:</label>
+            <input type="email" name="email" required>
+            
+            <label>Complaint Category:</label>
+            <select name="category" required>
+                <option value="">-- Select --</option>
+                <option value="Technical">Technical Issue</option>
+                <option value="Billing">Billing/Finance</option>
+                <option value="Service">Service Delay</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <label>Description:</label>
+            <textarea name="description" rows="4" required></textarea>
+            
+            <button type="submit">Submit Complaint</button>
+        </form>
+        
+        <div class="links">
+            <a href="track.html">Track Complaint Status</a> | 
+            <a href="login.html">Admin Login</a>
+        </div>
+    </div>
+    
+    <script>
+        // Parse URL params to show success message
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+        const id = urlParams.get('id');
+        const msgBox = document.getElementById("messageBox");
+        
+        if(status === "success") {
+            msgBox.innerHTML = "<p class='success'>Complaint Registered! Your ID is: <b>" + id + "</b> (Save this)</p>";
+        } else if(status === "duplicate") {
+            msgBox.innerHTML = "<p class='error'>Error: Duplicate Complaint Detected.</p>";
+        }
+    </script>
+</body>
+</html>

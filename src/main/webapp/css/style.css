@@ -1,0 +1,12 @@
+body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+.container { background: white; max-width: 500px; margin: auto; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+h1, h2 { text-align: center; color: #333; }
+input, select, textarea { width: 95%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; }
+button { width: 100%; padding: 10px; background: #28a745; color: white; border: none; cursor: pointer; }
+button:hover { background: #218838; }
+.links { text-align: center; margin-top: 15px; }
+.success { color: green; background: #d4edda; padding: 10px; border: 1px solid green; }
+.error { color: red; background: #f8d7da; padding: 10px; border: 1px solid red; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
